@@ -7,7 +7,7 @@ function getFormvalue(event) {
     const lname = form.elements['lname'].value;
 
     // Display the values using an alert
-    alert(`${fname} ${lname}`);
+    alert(`"${fname} ${lname}"`);
 }
 
 // Attach the event listener to the form
