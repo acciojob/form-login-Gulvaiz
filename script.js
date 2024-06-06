@@ -7,9 +7,10 @@ function getFormvalue(event) {
     const lname = form.elements['lname'].value;
 
     // Display the values using an alert
-    alert(`"${fname} ${lname}"`);
+    alert(`${fname} ${lname}`);
 }
 
 // Attach the event listener to the form
-document.getElementById('form1').addEventListener('submit', getFormvalue);
-
+document.getElementById('form1').addEventListener('submit', function(event) {
+    getFormvalue(event);
+});
