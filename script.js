@@ -5,12 +5,12 @@ function getFormvalue(event) {
     const form = document.getElementById('form1');
     const fname = form.elements['fname'].value;
     const lname = form.elements['lname'].value;
+	const submit = form.querySelector(".submit")
 
-    // Display the values using an alert
-    alert(`${fname} ${lname}`);
+	alert(`${fname} ${lname}`
+
 }
 
-// Attach the event listener to the form
-document.getElementById('form1').addEventListener('submit', function(event) {
-    getFormvalue(event);
-});
+document.getElementById('form1').addEventListener('submit', getFormvalue);
+
+
